@@ -107,3 +107,17 @@ toda vez que o terminal for restartado essa modificação ira se perder. A outra
 um BASH voce vai abrir o seu arquivo de configuração bash com cat ~/.bashrc e alterar por la o export PATH
 
 # File Permissions
+
+Todo arquivo e diretorio linux está associado com o owner (dono) e um grupo de usuarios, owner geralmente é quem criou o arquivo e o grupo é um
+conjunto de usuários que compartilham os mesmos tipos de permissão para o arquivo, e existe tambem a terceira categoria conhecida como others que
+serve para classificar usuarios que não estão no grupo e nem são donos do arquivo.
+
+Para ver as permissões de um arquivo basta usar o comando "ls -l" e os primeiros digitos vão ser algo parecido com isso "-rwxrwxrwx", parece complicad
+no começo mas basicamente esse monte de letra é dividida em 3 grupos ficando rwx(owner)-rwx(group)-rwx(others), onde R é read, W é write e X é execute
+dizendo assim como cada grupo, usuario ou outros devem ter acesso ao arquivo, caso tenha um traço entre os caracteres por exemplo "rw-" significa que
+o usuário daquele grupo (owner, group ou others) não tem acesso a determinada funcionalidade.
+
+Uma forma de alterar a permissão de um arquivo é usando o comando chamado "chmod", onde sua anotação fica: "chmod [u/g/o][+/-/=][r/w/x][nome_arquivo]"
+em um exemplo ele ficaria desta forma: "chmod go-wx arquivo.txt", onde vai remover as permissões de leitura e execução de arquivo dos groups e dos others.
+
+chmod só funcionara no linux wsl se ele estiver dentro do sistema de arquivo linux, se for arquivos criados no windows ele não funcionara.
