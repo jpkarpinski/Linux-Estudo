@@ -141,3 +141,17 @@ e também é possível permitir apenas alguns usuários terem acesso ao SUDO via
 Mais informações: 
  - https://mateusmuller.me/2019/11/06/sudo-guia-completo-do-comando-sudo-no-linux/
  - https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file
+
+# Bash Shell
+
+A interface de linha de comando é chamada de Shell, e é chamado shell por que providencia uma camada de abstração entre o usuário e o sistema 
+operacional, possuindo varias versões de Shell, a mais comum sendo o Bash, que pode tanto ser um terminal quanto uma linguagem de programação do
+sistema operacional, geralmente usada para automatizar processos, outras opções de terminal muito boas também são ZSH e FISH.
+
+Geralmente um arquivo de script bash começa com uma anotação chamada shebang com a seguinte sintaxe "#!<path/to/binary>" que aponta para o binario que
+queremos usar para rodar o script escrito, onde geralmente vai ser o #!/bin/bash ou #!/usr/bin/bash (pode acabar sendo alterado em um sistema com windows).
+
+Exemplos de bash script em: script.sh e bash_example.sh
+
+Mais informação:
+ - https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/#:~:text=A%20bash%20script%20is%20a,process%20using%20the%20command%20line.
