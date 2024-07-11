@@ -200,3 +200,37 @@ Para abrir o manual do Nano basta usar o comando CTRL + G
 
 Mias informação:
  - https://www.nano-editor.org/dist/latest/cheatsheet.html
+
+# Grep && Sed
+
+Grep: Global Regular Expression Print, usado para achar padrões de texto em arquivos unicos ou multiplos arquivos.
+
+Exemplo basico: grep "teste" arquivo.txt (Retorna todas as linhas que resultam no termo pesquisado)
+"grep -n" para tambem saber o numero da linha em que o termo aparece
+"grep -r <diretorio>" para pesquisar o termino por um diretório, também é possível juntar ele com o -n para saber a linha
+
+Exemplo: "grep -rn "teste" ."
+
+É possível usar o grep com regEx ficando desta forma: grep "^app" arquivo.txt
+
+Outra função util para o grep é achar erros em arquivos de log, por exemplo para contar os erros em um arquivo de log:
+grep -c NullPointerException SomeErrorLog.txt
+
+Ao contra ponto do Grep pode ser util também ter que modificar os textos encontrados dentro de um arquivo, que nem substituir todas as palavras "mãe"
+de um texto para as de "pai".
+
+Sed também pode ser usado com regEx igual: sed "s/app/pap/" arquivo.txt
+
+o "s" que aparece de inicio é usado como "substitution", para substituir um texto pelo outro, logo apos vem o termo que deve-se buscar e o termo que vai substituir o termo buscado
+
+por fim para substituir é so falar em qual local esse texto vai ser inserido, ficando assim: sed "s/app/pap/ arquivo.txt > arquivo.txt"
+
+Sed pode pesquisar qualquer Stream Text, até mesmo as do comando echo:
+(Pipes servem para executar um comando junto a outro)
+echo "jeff" | sed "s/j/m/g"
+
+O comando acima pega os dados de retorno de echo e usa o sed para transformar a palavra "jeff" em "meff"
+
+Mais informação:
+ - https://www.hostgator.com.br/blog/como-usar-o-comando-sed-do-linux/
+ - https://www.hostinger.com.br/tutoriais/comando-grep-linux
