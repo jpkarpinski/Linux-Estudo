@@ -231,6 +231,20 @@ echo "jeff" | sed "s/j/m/g"
 
 O comando acima pega os dados de retorno de echo e usa o sed para transformar a palavra "jeff" em "meff"
 
+Outro exemplo de substituição de texto é após a leitura de um arquivo com o comando "cat", por exemplo:
+cat arquivo.txt | sed 's/teste/TESTE/g'
+
+Também é possível até mesmo combinar um output do sed para outro sed, ficando dessa forma o exemplo acima: 
+cat arquivo.txt | sed 's/teste/TESTE/g' | sed 's/app/APP/g'
+
+E por fim para o sed de fato reescrever um arquivo basta usar a flag "-i" da seguinte forma:
+sed -i 's/APAGAR//' arquivo2.txt (para rodar o exemplo novamente insira a palavra APAGAR no arquivo2.txt)
+
+Outras coisas a se levar em consideração sobre o sed é que ele só aplica o filtro configurado apenas no primeiro termo de cada linha, caso
+houver mais casos da palavra a ser substituida na mesma linha ele não vai substituir, para isso é necessário passar a subflag g(global) ficando
+assim em um exemplo:
+
 Mais informação:
  - https://www.hostgator.com.br/blog/como-usar-o-comando-sed-do-linux/
  - https://www.hostinger.com.br/tutoriais/comando-grep-linux
+ - https://www.cyberciti.biz/faq/searching-multiple-words-string-using-grep/
