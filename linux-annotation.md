@@ -155,3 +155,19 @@ Exemplos de bash script em: script.sh e bash_example.sh
 
 Mais informação:
  - https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/#:~:text=A%20bash%20script%20is%20a,process%20using%20the%20command%20line.
+
+# Bash Config
+
+Existem varios arquivos de configuração para o terminal Bash onde cada um serve para uma coisa em especifico ou carregam as configurações de uma forma diferente, como por exemplo em um que carrega por login e o outro que carrega por criação de terminal novo. Geralmente se encontra esses arquivos na home do diretorio linux e são arquivos escondidos como "~./bashrc" e "~./bash_profile", como existem muitos arquivos e podem ficar ainda
+mais complexos a maneira mais simples de editar o terminal é usando o "bashrc".
+
+Para abrir o arquivo basta ir na home do linux e digitar "code ~/.bashrc"
+
+Dentro do arquivo é possível fazer coisas como definir variaveis de ambiente, geralmente as variaveis ja sao definidas por padrão porem pode acontecer
+que para rodar algum comando ela possa dar problema, e então sendo necessário mapear esse comando via Env na Path Env Variable.
+
+Outra coisa muito util dentro de um arquivo de configuração bash é definir aliases de comandos, para fazer isto basta digitar no arquivo de config
+a linha "alias ll='ls -alF'" onde vai adicionar um alias para o comando ls poder ser chamado dentro de um script bash como "ll"
+
+E por fim é possível alterar o visual do terminal para deixa-los mais elegante, para fazer isto basta modificar uma variavel conhecida como PS1 que
+fica dentro do arquivo de configuração. PS1 = Prompt String 1 determina oque voce ira ver antes de rodar comandos no terminal
