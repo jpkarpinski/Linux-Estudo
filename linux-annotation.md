@@ -171,3 +171,32 @@ a linha "alias ll='ls -alF'" onde vai adicionar um alias para o comando ls poder
 
 E por fim é possível alterar o visual do terminal para deixa-los mais elegante, para fazer isto basta modificar uma variavel conhecida como PS1 que
 fica dentro do arquivo de configuração. PS1 = Prompt String 1 determina oque voce ira ver antes de rodar comandos no terminal
+
+# Text Editors
+
+Os dois editores de texto utilizados por padrão no linux são Nano ou Vim, geralmente em servidores não se tem acesso a editores como o vscode, então
+o ideal é usar um dos dois lstados acima.
+
+Nano geralmente é minimo e pequeno sendo bem mais rapido de aprender, ja o Vim é mais robusto e demora bem mais para aprender a usa-lo.
+
+Caso va para o vim existe o comando "vimtutor" para dar uma visão geral de como se usa o vim.
+
+Para usar o nano basta digitar "nano <nome_arquivo>", se o arquivo já existir ele vai abrir o arquivo para edição e se não existir ele vai abrir um tela de interação que após salvar ele vai criar o arquivo.
+(Em caso de editor de código a melhor forma e usar um terminal comum ao invez do integrado do vscode, alguns comandos rodam apenas nele)
+
+Principais Comandos Nano dentro do editor:
+
+CTRL + S ou CTR + O para save, sendo o CTRL + O para salvar o arquivo com um nome especifico
+CTRL + X para sair do Terminal
+CTRL + W para pesquisar por alguma palavra ou termo no arquivo, após digitar qual é a palavra dar Enter
+
+Para copiar um texto:
+CTRL + 6 para definir uma marca no local do cursos, depois deve andar com o cursor usando as setinhas do teclado, apos selecionar oque quer copiar
+basta dar ALT + 6 para copiar o texto, e por fim o comando CTRL + U para colar o texto
+
+ALT + U para voltar apos algum erro (Igual CTRL + Z)
+
+Para abrir o manual do Nano basta usar o comando CTRL + G
+
+Mias informação:
+ - https://www.nano-editor.org/dist/latest/cheatsheet.html
