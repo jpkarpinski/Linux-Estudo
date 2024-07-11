@@ -121,3 +121,23 @@ Uma forma de alterar a permissão de um arquivo é usando o comando chamado "chm
 em um exemplo ele ficaria desta forma: "chmod go-wx arquivo.txt", onde vai remover as permissões de leitura e execução de arquivo dos groups e dos others.
 
 chmod só funcionara no linux wsl se ele estiver dentro do sistema de arquivo linux, se for arquivos criados no windows ele não funcionara.
+
+# Sudo
+
+Todo diretorio e arquivo linux tem um dono, porem é possível trocar ou transferir quem é o dono do arquivo, geralmente se faz isso com o comando
+"chown <usuario> <arquivo.txt>" (changes file owner), também é possível dar permissão para o usuário root (id = 0), porem quando for fazer esta permissão geralmente recebera um erro dizendo que a operação não foi permitida, apenas o usuário root ou usuários com o tal do SUDO privilege podem
+ter este tipo de permissão.
+
+*Root é um usuário especial geralmente com o ID de 0 e possui privilegios elevados do sistema linux. Podendo modificar e acessar qualquer arquivo ou configuração*
+
+Mesmo logado como um usuário comum ainda é possível (caso tenha permissão) rodar comandos conhecidos como SUDO (Super User Do), onde é igual rodar
+como administrador de um sistema windows, dando mais privilegios para comandos antes inacessiveis. Quando se roda um comando com sudo por exemplo
+"sudo chown root foo.txt" ele vai pedir uma senha (geralmente da conta do usuário que está tentando usar o SUDO) antes de rodar o comando com 
+privilegio elevado.
+
+Na vida real a melhor coisa é remover qualquer tipo de autenticação via senha e deixar todo e qualquer tipo de acesso via ssh para uma maior segurança
+e também é possível permitir apenas alguns usuários terem acesso ao SUDO via arquivo de configuração na pasta "/etc/sudoers"
+
+Mais informações: 
+ - https://mateusmuller.me/2019/11/06/sudo-guia-completo-do-comando-sudo-no-linux/
+ - https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file
