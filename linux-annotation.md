@@ -248,3 +248,17 @@ Mais informação:
  - https://www.hostgator.com.br/blog/como-usar-o-comando-sed-do-linux/
  - https://www.hostinger.com.br/tutoriais/comando-grep-linux
  - https://www.cyberciti.biz/faq/searching-multiple-words-string-using-grep/
+
+# Process Management 
+
+No linux para ver os processos acontecendo no computador basta usar o comando "ps", porem o ps entrega poucas informações de processos no computador,
+geralmente vão ser processos rodando no terminal especifico, para ver todos os processos basta rodar "ps -ef", entregando ainda mais informação como
+por exemplo quem foi o usuário que startou o processo que está rodando, quanto de cpu está usando e etc.
+
+Para matar um processo a primeira coisa que se deve fazer é pegar o ID do processo em que se quer finalizar, após pegar o PID (Process ID) basta
+rodar o comando "kill <ID>", porem ele vai tentar matar o processo de uma maneira nao muito evasiva oque muitas vezes pode dar errado pois ele envia um sinal para o processo conhecido como "SIGTERM", porem para resolver isso basta usar a flag "-9" ficando "kill -9 205841" onde via enviar um sinal de "SIGKILL"
+
+Outra forma de ver informação sobre os processos é usando o comando "top" onde mostra as informações em tempo real, como uso de memoria, processos sendo criados e etc.
+
+E existe por fim a melhor forma de se gerenciar e verificar processos rodando no linux conhecido como o comando "htop" onde possui muitas funcionalidades como filtros, mecanismos de busca, possibilidade de ver o processo e seus PPID(Parent Process ID) e muitas coisas a mais e tudo em
+tempo real.
