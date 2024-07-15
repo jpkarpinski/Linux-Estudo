@@ -265,3 +265,42 @@ tempo real.
 
 # Cron Jobs
 
+Cron é um time-based job schedular (agendador de trabalho baseado em tempo) para fazer trabalhos no background em uma data especifica (data e hora);
+
+Ex: Dar backup da database todo dia em um horario especifico como 2 da manha
+
+*OBS: Cron pode funcionar com diferentes tipos de script, por exemplo com bash ou nodejs*
+
+Um agendamento CRON possui uma sintaxe de 5 caracteres iguais como =  * * * * * e serve como minutos, horas, dia do mes, mes, dia da semana.
+
+Não é necessário calcular isso a mão pois existem ferramentas gratuitas online que ja te entrega o CRON, como por exemplo:
+https://crontab.guru/
+
+Script de exemplo para ser rodado dentro de um CRON está em cron-bash.sh
+
+Comando: usando o comando realpath <nome_arquivo> é possivel adquirir o caminho ate o encontro do arquivo, oque se torna util para registrar uma
+nova tarefa dentro do CRON tasks.
+
+A primeira coisa a se fazer é rodar o servico do CRON, para isso basta usar o comando "sudo service cron start" e precisa ser com sudo.
+
+Para adicionar uma tarefa ao cron basta editar o arquivo "crontab" para isso use o comando crontab -e onde vai abrir um editor de código para poder
+adicionar uma nova tarefa.
+
+Deve-se ser adicionado os caracteres especiais como "20 * * * *", depois o caminho de execução do arquivo e por fim o arquivo, ficando algo parecido
+com o exemplo a seguir:
+* * * * * /mnt/d/apps/linux-playground/hello.sh
+
+Tambem é possivel adicionar o caminho do elemento em que vai executar o arquivo, por exemplo se fosse em node:
+0 * * * * /usr/bin/node /home/usuario/scripts/meu_script.js >> /home/usuario/scripts/cron_output.log 2>&1
+
+No exemplo acima também contem o caminho de qual elemento vai executar o script com "/usr/bin/node" e apos o ">>" tem em qual caminho vai o log de
+erros do script adicionado dentro do crontab.
+
+Para saber se um projeto dentro do crontab está rodando basta usar o comando sudo grep CRON /var/log/syslog ou sudo grep CRON /var/log/cron e
+procurar pelo nome do script que está rodando.
+
+Outra boa coisa a se fazer são usar ferramentas de HealthCheck para saber se os cron jobs estão sendo executados.
+
+Mais informações:
+ -- https://www.hostinger.com.br/tutoriais/cron-job-guia
+ -- https://diolinux.com.br/tutoriais/entenda-o-que-e-cron-job.html
