@@ -304,3 +304,4 @@ Outra boa coisa a se fazer são usar ferramentas de HealthCheck para saber se os
 Mais informações:
  -- https://www.hostinger.com.br/tutoriais/cron-job-guia
  -- https://diolinux.com.br/tutoriais/entenda-o-que-e-cron-job.html
+
