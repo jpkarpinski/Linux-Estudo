@@ -335,3 +335,40 @@ Porem este comando por sí só não vai comprimir os arquivos, para fazer isso d
 
 Mais informação:
  - https://www.hostinger.com.br/tutoriais/comando-tar-linux
+
+# Package Management
+
+Existem algumas maneiras de instalar pacotes no linux, entre elas estão a "FROM SOURCE" e "PACKAGE MANAGER".
+
+A from source basicamente é puxar os arquivos da dependencia que quer instalar por exemplo com um git clone, e apos puxar os arquivos basta acessar
+a pasta do arquivo e verificar se existe um arquivo chamado "Makefile", caso contenha basta abrir o terminal na mesma pasta/diretorio e rodar o
+comando "make" para compilar para binario o comando ou pacote que queira instalar, após isso é possível executar este binario por exemplo como 
+"/sl" (nome do binario).
+
+Conteudo mesmo fazendo dessa forma ainda vai restar um problema que é o fato de que este binario não esta mapeado em $PATH, por isso não é possível 
+acessa-lo em todos os lugares do terminal ou apenas rodar o comando "sl", para isso basta mover o arquivo binario que foi compilado para dentro da
+pasta onde fica o binario dos usuários que seria "mv /.sl /usr/local/bin"
+
+Existem outras formas de se instalar um pacote de maneira mais facil, a outra maneira seria o "Package manager", existem varios gerenciadores de
+pacote:
+
+based: distro linux baseado em algo
+
+APT - Debian based
+YUM/RPM - Redhat based
+Pacman - Arch
+
+Como o ubuntu é um sistema baseado em Debian ele vai rodar com o Package Manager de APT (Advanced Package Tool), alem disso um gerenciador de pacotes
+possui um repositorio para os autores de software, para que o usuario final nao precise compilar o codigo fonte e instalar tudo manualmente.
+
+Geralmente quando se roda um comando apt a primeira coisa é rodar o comando "sudo apt update" .
+
+Esse comando vai geralmente dar fetch nos metadados mais recentes sobre os pacotes espalhados na internet (meio que atualizar a memoria do gerenciador de pacotes)
+
+Para instalar o mesmo pacote via apt basta rodar o comando "sudo apt install sl" juntamente e anteriormente com o comando de update do apt, e vai dar
+unpacking nos locais apropriados, podendo assim rodar o comandl "sl" em qualquer lugar do terminal.
+
+*Entender por que utilizar o comando sudo apt update antes de instalar qualquer pacote*
+
+Mais informação:
+ - 
