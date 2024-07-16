@@ -305,3 +305,33 @@ Mais informações:
  -- https://www.hostinger.com.br/tutoriais/cron-job-guia
  -- https://diolinux.com.br/tutoriais/entenda-o-que-e-cron-job.html
 
+# Tag & Gzip
+
+LZ77 é um tipo de algoritmo para compressão de arquivos que serve como base para o Gzip.
+
+Gzip é usado para fazer com que os arquivos fiquem menores sem perder nenhum tipo de informação, esse processo é conhecido como "Lossless"
+
+A primeira coisa a fazer é verificar o tamanho do arquivo original, é possivel ver isso com o comando "ls -lh".
+
+No exemplo dentro de "gzip" com o arquivo "arquivo.txt" o seu tamanho original é de 1.1kb
+
+para comprimir o arquivo basta rodar o comando "gzip <nome_arquivo>", dessa forma o arquivo de 1.1kb vira um arquivo de 48 bytes.
+
+Para fazer com que o arquivo volte ao estado normal basta rodar o comando "gzip -d <nome_arquivo>".
+
+Porem o Gzip não funciona para diretorios inteiros ou multiplos arquivos ao mesmo tempo, para isso se usa o comando "Tar", este comando possui a
+utilizade principal de arquivar diretorios, fazendo com que eles ajam como se fossem um unico arquivo
+
+"tar <flags> <nome-diretorio_pos_arquivar> <diretorio_para_arquivar>"
+O comando basico para isso é "tar -cvf arquive.tar ./gzip/"
+
+as flags -cvf:
+- c: Create (Cria um novo arquivo do arquivamento)
+- v: Verbose (lista exatamente oque esta arquivando, um log dos arquivos)
+- f: usado para representar o nome do arquivo que vamos nomear após o diretorio ser transformado
+
+Porem este comando por sí só não vai comprimir os arquivos, para fazer isso deve-se adicionar uma nova flag ao comando já mostrado anteriormente:
+"tar -czvf archive.tar ./gzip/"
+
+Mais informação:
+ - https://www.hostinger.com.br/tutoriais/comando-tar-linux
