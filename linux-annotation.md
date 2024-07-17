@@ -371,4 +371,7 @@ unpacking nos locais apropriados, podendo assim rodar o comandl "sl" em qualquer
 *Entender por que utilizar o comando sudo apt update antes de instalar qualquer pacote*
 
 Mais informação:
- - 
+ - https://oktopus.cloud/blog/gerenciamento-de-pacotes-no-linux-rpm-yum-apt-get-dpkg
+ - https://diolinux.com.br/video/lidar-gerenciadores-de-pacotes-no-linux.html
+
+ 
