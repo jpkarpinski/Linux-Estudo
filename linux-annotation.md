@@ -374,4 +374,39 @@ Mais informação:
  - https://oktopus.cloud/blog/gerenciamento-de-pacotes-no-linux-rpm-yum-apt-get-dpkg
  - https://diolinux.com.br/video/lidar-gerenciadores-de-pacotes-no-linux.html
 
- 
+# Virtual Private Server
+
+Categoria especial apenas para anotações de VPS
+
+Code Transfer:
+    - Via git com SSH para download de código
+    - Dando build no código e puxando apenas o build com ferramentas de FTP ou via SCP
+
+SSH:
+    - https://www.cloudflare.com/pt-br/learning/access-management/what-is-ssh/
+
+NGINX: 
+    - https://www.youtube.com/watch?v=7VAI73roXaY
+    - https://nginx.org/en/docs/beginners_guide.html 
+    - É possível separar multiplos arquivos de configuração de aplicação no NGINX usando o caminho "/etc/nginx/sites-available" para
+      salvar os arquivos de config, apos isso basta entar em "sites-enabled" e excluir o arquivo defaultm e depois o comando "ln -s /etc/nginx/sites-available/example /etc/nginx/sites-enabled/"
+
+UFW (Firewall): 
+    - https://serverspace.io/support/help/basic-commands-ufw/#:~:text=If%20you%20get%20a%20Status,all%20ports%20on%20the%20server.
+    - https://www.hostinger.com.br/tutoriais/firewall-ubuntu-ufw
+    - Sempre bom verificar as portas 443 e 80 para saber se o NGINX está livre para fazer seu trabalho
+
+System CTL:
+    - https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+
+SystemD: 
+    - https://earthly.dev/blog/systemd/
+    - https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files
+    - "systemctl --type=service --state=running" para ver todos os servicos rodando
+
+Env Variables:
+    - https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/
+    - Variaveis de ambiente também podem ser definidas de maneira global dentro do arquivo /etc/environment
+
+Mount Volume:
+    - 
