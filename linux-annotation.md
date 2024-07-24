@@ -410,3 +410,9 @@ Env Variables:
 
 Mount Volume:
     - 
+
+Extras para servidor:
+    - https://www.youtube.com/watch?v=DdoncfOdru8 (Docker)
+    - https://www.youtube.com/watch?v=Os1AJhS2qvk (DNS)
+    - https://www.youtube.com/watch?v=rIrNIzy6U_g (Docker)
+    - https://www.youtube.com/watch?v=5hycyr-8EKs (Ansible)
