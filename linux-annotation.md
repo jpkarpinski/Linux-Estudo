@@ -378,6 +378,9 @@ Mais informação:
 
 Categoria especial apenas para anotações de VPS
 
+Linux File System:
+    - https://www.youtube.com/watch?v=A3G-3hp88mo
+
 Code Transfer:
     - Via git com SSH para download de código
     - Dando build no código e puxando apenas o build com ferramentas de FTP ou via SCP
@@ -416,3 +419,8 @@ Extras para servidor:
     - https://www.youtube.com/watch?v=Os1AJhS2qvk (DNS)
     - https://www.youtube.com/watch?v=rIrNIzy6U_g (Docker)
     - https://www.youtube.com/watch?v=5hycyr-8EKs (Ansible)
+
+# Conteudos interessantes
+
+R-Linux:
+    - https://diolinux.com.br/sistemas-operacionais/r-linux-ferramenta-para-recuperar-dados-linux.html
