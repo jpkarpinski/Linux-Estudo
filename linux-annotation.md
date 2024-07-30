@@ -424,3 +424,7 @@ Extras para servidor:
 
 R-Linux:
     - https://diolinux.com.br/sistemas-operacionais/r-linux-ferramenta-para-recuperar-dados-linux.html
+
+Deploy:
+    - https://www.youtube.com/watch?v=KFwFDZpEzXY
+    - https://www.youtube.com/watch?v=GCznXfbfMq0
