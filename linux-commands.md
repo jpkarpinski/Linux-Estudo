@@ -12,6 +12,9 @@ flags:
     - l: lista os arquivos em formato de lista mostrando também a permissão dos arquivos em formato rwxrwxrwx
     - a: ver pastas e arquivos "escondidos", tipo arquivos que começam com .; ".env"
 
+ref:
+    - https://www.freecodecamp.org/portuguese/news/o-comando-ls-do-linux-como-listar-arquivos-em-um-diretorio-e-flags-de-opcao/
+
 # PWD
 
 Print Working Directory, serve para mostrar o caminho do diretório atual
@@ -65,6 +68,9 @@ Ex: mkdir -p diretorio1/diretorio2/diretorio3
 
 flags:
     - p: cria uma sequencia de parent directories
+
+ref:
+    - https://www.certificacaolinux.com.br/comando-linux-mkdir/
 
 # CP
 
@@ -218,7 +224,38 @@ Ex: diff arquivo1.txt arquivo2.txt
 Usado para encontrar arquivos, faz varredura em todos os diretórios se precisar, primeiro com o caminho de onde vai ser olhado e segundo
 uma expressão ou nome do arquivo com a flag --name
 
-Ex: sudo find / -name "nomearquivo*"
+Ex: 
+    - sudo find / -name "nomearquivo*"
+    - sudo find . -type f -name ".*"
+    - find . -type f -empty
 
 ref:
     - https://www.hostinger.com.br/tutoriais/find-locate-comandos-linux
+
+# AWK
+
+Pode ser usado em um formato parecido com o "grep" onde da pra filtrar colunas em um texto ou criar logica para manipulação de conteudo.
+Comando awk é uma linguagem de script.
+
+Usado mais para trabalhar pegando colunas e rodando scripts como se fosse um excell do que para caçar de fato as palavras
+
+Ex:
+    - ip address | grep eth0 | grep inet | awk '{print $2}'
+    - awk -F "/" "{print $5}" urls-blog-hostgator.txt
+
+ref:
+    - https://www.hostgator.com.br/blog/como-usar-o-comando-awk-do-linux/
+
+# DF
+
+Mostra quanto de espaço se tem sendo usado em cada pasta
+
+Ex:
+    - df -H
+
+# History
+
+Mostra o historico de comandos realizados no servidor, ate mesmo os que deram errado
+
+Ex:
+    - history

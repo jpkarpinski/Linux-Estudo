@@ -380,6 +380,11 @@ Categoria especial apenas para anotações de VPS
 
 Linux File System:
     - https://www.youtube.com/watch?v=A3G-3hp88mo
+    - https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained
+
+$PATH:
+    - https://www.youtube.com/watch?v=hk0RwVC6uts
+    - https://medium.com/@linuxschooltech/what-is-the-path-variable-in-linux-and-unix-98267b7432b8
 
 Code Transfer:
     - Via git com SSH para download de código
