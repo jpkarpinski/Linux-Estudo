@@ -382,6 +382,11 @@ Linux File System:
     - https://www.youtube.com/watch?v=A3G-3hp88mo
     - https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained
 
+Linux Permissions:
+    - https://www.youtube.com/watch?v=4e669hSjaX8
+    - https://www.youtube.com/watch?v=19WOD84JFxA
+    - https://www.youtube.com/watch?v=07JOqKOBRnU (Sudo)
+
 $PATH:
     - https://www.youtube.com/watch?v=hk0RwVC6uts
     - https://medium.com/@linuxschooltech/what-is-the-path-variable-in-linux-and-unix-98267b7432b8
@@ -414,6 +419,8 @@ SystemD:
 
 Env Variables:
     - https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/
+    - https://www.youtube.com/watch?v=ysUwmjrXG2M (com subshell)
+    - https://www.youtube.com/watch?v=9ZpL8iDU7LY
     - Variaveis de ambiente também podem ser definidas de maneira global dentro do arquivo /etc/environment
 
 Mount Volume:
