@@ -386,10 +386,19 @@ Linux Permissions:
     - https://www.youtube.com/watch?v=4e669hSjaX8
     - https://www.youtube.com/watch?v=19WOD84JFxA
     - https://www.youtube.com/watch?v=07JOqKOBRnU (Sudo)
+    - https://www.youtube.com/watch?v=FGRtNvKdtbk&t=506s (Sudo)
+    - https://www.youtube.com/watch?v=jwnvKOjmtEA (Sudo)
+
+Linux User Management:
+    - https://www.youtube.com/watch?v=19WOD84JFxA&t=1300s
+    - https://www.youtube.com/watch?v=GnlgAD8-GhE
 
 $PATH:
     - https://www.youtube.com/watch?v=hk0RwVC6uts
     - https://medium.com/@linuxschooltech/what-is-the-path-variable-in-linux-and-unix-98267b7432b8
+
+BASH:
+    - https://www.youtube.com/watch?v=2733cRPudvI&list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w
 
 Code Transfer:
     - Via git com SSH para download de código
@@ -408,6 +417,7 @@ UFW (Firewall):
     - https://serverspace.io/support/help/basic-commands-ufw/#:~:text=If%20you%20get%20a%20Status,all%20ports%20on%20the%20server.
     - https://www.hostinger.com.br/tutoriais/firewall-ubuntu-ufw
     - Sempre bom verificar as portas 443 e 80 para saber se o NGINX está livre para fazer seu trabalho
+    - https://www.youtube.com/watch?v=-CzvPjZ9hp8
 
 System CTL:
     - https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
