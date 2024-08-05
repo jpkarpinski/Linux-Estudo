@@ -442,11 +442,16 @@ Extras para servidor:
     - https://www.youtube.com/watch?v=rIrNIzy6U_g (Docker)
     - https://www.youtube.com/watch?v=5hycyr-8EKs (Ansible)
 
-# Conteudos interessantes
-
 R-Linux:
     - https://diolinux.com.br/sistemas-operacionais/r-linux-ferramenta-para-recuperar-dados-linux.html
 
 Deploy:
     - https://www.youtube.com/watch?v=KFwFDZpEzXY
     - https://www.youtube.com/watch?v=GCznXfbfMq0
+
+Load Balancer:
+    - https://www.youtube.com/watch?v=v81CzSeiQjo
+    - https://www.youtube.com/watch?v=bFZurhL14LA
+
+SSH:
+    - https://www.youtube.com/watch?v=YS5Zh7KExvE
