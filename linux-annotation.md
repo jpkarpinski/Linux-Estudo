@@ -459,6 +459,8 @@ Load Balancer:
 
 SSH:
     - https://www.youtube.com/watch?v=YS5Zh7KExvE
+    - https://www.cloudflare.com/pt-br/learning/access-management/what-is-ssh/
+    - https://www.youtube.com/watch?v=5JvLV2-ngCI
 
 Linux Process:
     - https://www.youtube.com/watch?v=WsR11EGF9PA
