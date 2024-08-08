@@ -400,6 +400,10 @@ $PATH:
 BASH:
     - https://www.youtube.com/watch?v=2733cRPudvI&list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w
 
+CronJob;
+    - https://www.youtube.com/watch?v=7cbP7fzn0D8
+    - https://www.hostinger.com.br/tutoriais/cron-job-guia
+
 Code Transfer:
     - Via git com SSH para download de código
     - Dando build no código e puxando apenas o build com ferramentas de FTP ou via SCP
@@ -455,3 +459,7 @@ Load Balancer:
 
 SSH:
     - https://www.youtube.com/watch?v=YS5Zh7KExvE
+
+Linux Process:
+    - https://www.youtube.com/watch?v=WsR11EGF9PA
+    - https://codeahoy.com/2017/01/20/hhtop-explained-visually/
