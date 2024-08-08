@@ -42,3 +42,23 @@ Comandos:
     D: Muda o delay de atualização do comando TOP (default é 3.0 segundos).
 
 Os mesmos conceitos de TOP podem ser usados em HTOP.
+
+# Load Average
+
+Mostra o quao ocupado seu servidor está.
+
+O Load Average é uma informação que pode ser acessada em diferentes locais e comandos como os comandos "uptime" e "top" ou "htop".
+
+Load Average: 0.04, 0.05, 0.0
+
+O primeiro numero em Load Average mostra o tamanho de "load" ou carga que se teve no servidor durante o ultimo minuto.
+O segundo numero em Load Average mostra o tamanho da carga dos ultimos 5 minutos.
+E por fim os ultimos 15 minutos de uso do servidor como o ultimo numero.
+
+Importante saber quanto de CPU se tem no servidor, isso pode ser visto usando o comando HTOP e contando quantas cpu's aparecem, geralmente as
+CPU's são numeros "1", "3" e por ai vai.
+
+Outra forma de ver isso é com "/cat /proc/cpuinfo" e contar os numeros dos processos, no caso da minha maquina são 8 processos que vão de 0 até 7.
+
+Quanto mais cpus e cores maior deve ser o numero do Load Average para se estar com "100%" de uso, se voce tiver 2 cores para ficar com 100% de uso
+precisaria ter um load average de 2.0.
