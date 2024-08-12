@@ -470,3 +470,11 @@ Linux Process:
 
 Linux Security:
     - https://www.youtube.com/watch?v=Sa0KqbpLye4 (overview)
+
+DDoS:
+    - https://www.youtube.com/watch?v=bDAY-oUP0DQ
+
+CDN:
+    - https://www.youtube.com/watch?v=RI9np1LWzqw
+    - https://www.youtube.com/watch?v=Bsq5cKkS33I
+    - https://www.youtube.com/watch?v=Bsq5cKkS33I
