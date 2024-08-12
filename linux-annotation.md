@@ -425,6 +425,7 @@ UFW (Firewall):
 
 System CTL:
     - https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+    - https://www.youtube.com/watch?v=5JVBpXiYMKo
 
 SystemD: 
     - https://earthly.dev/blog/systemd/
@@ -466,3 +467,6 @@ Linux Process:
     - https://www.youtube.com/watch?v=WsR11EGF9PA
     - https://codeahoy.com/2017/01/20/hhtop-explained-visually/
     - https://www.youtube.com/watch?v=1R-uWs3bTYQ
+
+Linux Security:
+    - https://www.youtube.com/watch?v=Sa0KqbpLye4 (overview)
