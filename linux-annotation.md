@@ -478,3 +478,14 @@ CDN:
     - https://www.youtube.com/watch?v=RI9np1LWzqw
     - https://www.youtube.com/watch?v=Bsq5cKkS33I
     - https://www.youtube.com/watch?v=Bsq5cKkS33I
+
+Internet: 
+    - https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics
+
+    - SSL e HTTPS:
+        - https://www.youtube.com/watch?v=j9QmMEWmcfo
+        - https://www.youtube.com/watch?v=EnY6fSng3Ew
+
+    - Dominio:
+        - https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name
+        - https://www.cloudflare.com/pt-br/learning/dns/what-is-dns/
