@@ -400,9 +400,12 @@ $PATH:
 BASH:
     - https://www.youtube.com/watch?v=2733cRPudvI&list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w
 
-CronJob;
+CronJob:
     - https://www.youtube.com/watch?v=7cbP7fzn0D8
     - https://www.hostinger.com.br/tutoriais/cron-job-guia
+
+Package Manager:
+    - https://www.youtube.com/watch?v=1kicKTbK768
 
 Code Transfer:
     - Via git com SSH para download de código
