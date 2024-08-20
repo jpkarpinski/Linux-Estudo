@@ -14,3 +14,13 @@ para poder executar os comandos bash.
 
 Shebang: primeira linha de qualquer script onde diz para o script qual interpretador deve ser usado, no nosso caso o bash, mas poderia ser outro
 como até mesmo o proprio nodejs.
+
+# Vars
+
+Scripts bash para referenciar uma variavel dentro de uma string essa string precisa ser double quotes.
+Ex: echo "My age is $myvar"
+
+se o mesmo exemplo acima fosse feito com single quotes ('') ele teria printado "echo 'my age is $myvar'" ao invez do valor real da variavel $myvar.
+
+Subshell faz com que seja possivel executar um comando no background, e com isso pegar o resultado do comando o salvando em uma variavel:
+Ex: myvar=$(ls)
